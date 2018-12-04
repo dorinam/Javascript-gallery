@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Image Gallery with FancyBox and Javascript</title>
+		<link rel="stylesheet" href="css/site.css">
+		<link rel="stylesheet" href="fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/responsive.css">
+	
+	</head>
+	<body>
+			<div id="wrapper">
+					<section>
+						<ul id="gallery">
+							<li>
+								<a href="img/dorinamihaicom.png">
+									<img src="img/dorinamihaicom.png" alt="">
+									<p>www.dorinamihai.com</p>
+								</a>
+							</li>
+							<li>
+								<a href="img/coursebay.png">
+									<img src="img/coursebay.png" alt="">
+									<p>www.coursebay.tk</p>
+								</a>
+							</li>
+							<li>
+								<a href="img/nootropicspower.png">
+									<img src="img/nootropicspower.png" alt="">
+									<p>www.nootropicspower.tk</p>
+								</a>
+							</li>
+							<li>
+								<a href="img/dorinamihaitech.png">
+									<img src="img/dorinamihaitech.png" alt="">
+									<p>www.dorinamihai.tech</p>
+								</a>
+							</li>
+							<li>
+								<a href="img/traducciones.png">
+									<img src="img/traducciones.png" alt="">
+									<p>www.traducciones.tk></p>
+								</a>
+							</li>
+						</ul>
+					</section>	
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+		<script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("#gallery a").fancybox({
+					overlayColor:"#000",
+					overlayOpacity:.6,
+					transitionIn: "elastic",
+					transitionOut:"elastic",
+					titlePosition: "Outside",
+					cyclic: true,
+				});
+			});
+		</script>
+	</body>
+</html>
